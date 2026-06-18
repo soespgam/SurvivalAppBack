@@ -1,0 +1,29 @@
+package solvivalcode.survivalback.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "material_types")
+public class MaterialType {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+
+  @Column(name = "name")
+  private String nameMaterialType;
+
+  @Column(name = "description")
+  private String descriptionMaterialType;
+
+  
+   /*  @OneToMany(mappedBy = "materialType")
+   private List<Material> materials; */
+  
+
+}
