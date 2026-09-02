@@ -1,0 +1,7 @@
+package solvivalcode.survivalback.repositories;
+import org.springframework.data.jpa.repository.JpaRepository;
+import solvivalcode.survivalback.Model.entities.Material;
+
+public interface MaterialRepository  extends JpaRepository<Material, Long> {
+
+}
